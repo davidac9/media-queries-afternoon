@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 2000px;
+    /* background-image: url(https://c8.alamy.com/comp/BCFYEG/high-resolution-panorama-of-vancouver-british-columbia-from-cambie-BCFYEG.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: 100% */
+}
+
+header {
+    background: darkgreen;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1rem;
+    height: 3.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin: 0 1rem;
+
+}
+i {
+    font-family: sans-serif;
+    color: #fff;
+}
+.menu {
+    display: none !important;
+}
+li:hover {
+    color: #ffffff77;
+}
+
+.title > h1 {
+    margin: 0 1rem;
+    color: gold;
+    
+}
+.dropdown {
+    background: darkgreen;
+    transition: .4s;
+    height: 175px;
+    position: sticky; 
+    top: 3.5rem; 
+}
+.dropdown > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: sans-serif;
+    color: #fff;
+}
+.hide {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    position: sticky;
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 800px
+    }
+    nav > li {
+        display: none;
+    }
+    nav {
+        background: gold;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-right: .5rem;
+        margin-right: 1rem;
+    }
+    .menu {
+        display: inline-block !important
+    }
+}
+/* here's some stuff that's not in the header */
+
+.welcome {
+    background-image: url(https://c8.alamy.com/comp/BCFYEG/high-resolution-panorama-of-vancouver-british-columbia-from-cambie-BCFYEG.jpg);
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: 100%;
+    /* padding: 0; */
+    /* margin: 0; */
+    height: 700px;
+    display: flex;
+    align-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 50px; */
+    color: white;
+    font-family: sans-serif;
+    line-height: 1px;
+
+}
+.welcome-content {
+    width: 100vw;
+    background-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 700px;
+    display: flex;
+    align-content: center;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 50px; */
+    color: white;
+    font-family: sans-serif;
+    line-height: 1px;
+    padding-top: 10%
+
+}
+.welcome > button {
+    height: 40px;
+    border: none
+}
+.welcome-content > h2 {
+    font-size: 3rem;
+}
+
+@media (min-width: 992.1px) {
+    .dropdown {
+        display:none;
+    }
+    .welcome-content {
+        /* padding-top: 10% */
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        max-width: 600px;
+    }
+    .welcome-content {
+        padding-top: 10%
+    }
+    .welcome-content > h2 {
+        font-size: 2rem
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        max-width: 550px;
+    }
+
+}
